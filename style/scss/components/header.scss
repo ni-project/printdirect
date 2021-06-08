@@ -1,0 +1,20 @@
+
+.header {
+  @extend %full-width;
+  padding: 24px;
+  background: $white;
+  border-bottom: 1px solid $borderColor;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+
+  .header {
+    padding: 16px 0 0;
+
+    svg {
+      width: 150px;
+    }
+  }
+
+}

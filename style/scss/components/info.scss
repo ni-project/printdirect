@@ -1,0 +1,26 @@
+
+.info {
+
+  &-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+  }
+
+  &-link {
+    display: inline-block;
+    vertical-align: middle;
+    @include font(14px, 19px, $blue, 600);
+    text-decoration: none !important;
+  }
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    cursor: help;
+  }
+
+}

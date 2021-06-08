@@ -1,0 +1,132 @@
+
+.form {
+
+  &-group {
+    @extend %full-width;
+    position: relative;
+
+    &_caption {
+      margin-bottom: 4px;
+      @include font(14px, 20px, $secondary, 600);
+      text-transform: uppercase;
+    }
+
+    &_wrapper {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    &_controls {
+      display: flex;
+      flex-direction: row;
+      height: 35px;
+      background: #F7F7F7;
+      border: 1px solid $formBorderColor;
+      border-radius: 4px;
+    }
+
+    &_control {
+      @extend %full-width;
+      vertical-align: top;
+      height: 100%;
+      background: $white;
+      font-family: $fontGlobal;
+      @include font(15px, 20px, $primary, 600);
+      text-align: center;
+      border: 0;
+
+      &-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        width: 46px;
+        height: 100%;
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 100%;
+        font-size: 15px;
+        line-height: 19px;
+        color: #000000;
+        font-weight: 700;
+        cursor: pointer;
+        @extend %no-user-select;
+
+        &_left {
+          border-right: 1px solid $formBorderColor;
+        }
+
+        &_right {
+          border-left: 1px solid $formBorderColor;
+        }
+      }
+
+    }
+
+    &_price {
+      margin-top: 4px;
+      @include font(13px, 18px, $disable, 600);
+    }
+
+    &_select {
+      .form-group_wrapper {
+        width: 90px;
+      }
+    }
+
+  }
+
+  &-button {
+    @extend %full-width;
+    padding: 12px 16px;
+    background: $blue;
+    font: 600 15px 'Open Sans';
+    line-height: 26px;
+    color: #FBFBFC;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &_favorites {
+      display: inline-block;
+      vertical-align: top;
+      width: 25px;
+      cursor: pointer;
+
+      svg path {
+        @extend %transit-300;
+      }
+
+      &:hover {
+        svg path {
+          fill: $discountColor;
+        }
+      }
+
+      &.active {
+        svg path {
+          fill: $discountColor;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .form {
+    &-button {
+      &_favorites {
+        display: none;
+      }
+    }
+  }
+
+}

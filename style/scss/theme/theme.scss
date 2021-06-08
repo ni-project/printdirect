@@ -1,0 +1,42 @@
+
+/* Colors */
+$commonColor:   #202527;
+
+$primary:       #202527;
+$secondary:     #545658;
+$disable:       #94999E;
+$white:         #ffffff;
+$blue:          #0096EA;
+$red:           #EF3D5B;
+$H_colorText:   #202527;
+$borderColor:   #E9EAEC;
+$discountColor: #EA096E;
+$formBorderColor: #D1D1D1;
+
+/* FONT */
+$fontGlobal: 'Open Sans', sans-serif;
+
+/* Font mixin */
+@mixin font($fontSize, $lineHeight, $color, $fontWeight) {
+  font: {
+    size: $fontSize;
+    weight: $fontWeight;
+  }
+  color: $color;
+  line-height: $lineHeight;
+}
+
+$H1_fontSize: 40px;    $H1_lineHeight: 56px;
+$H2_fontSize: 32px;    $H2_lineHeight: 44px;
+$H3_fontSize: 28px;    $H3_lineHeight: 36px;
+$H4_fontSize: 24px;    $H4_lineHeight: 32px;
+$H5_fontSize: 20px;    $H5_lineHeight: 28px;
+$H6_fontSize: 16px;    $H6_lineHeight: 24px;
+
+/* H TITLE MOBILE */
+$m_H1_fontSize: 30px;    $m_H1_lineHeight: 44px;
+$m_H2_fontSize: 26px;    $m_H2_lineHeight: 36px;
+$m_H3_fontSize: 24px;    $m_H3_lineHeight: 32px;
+$m_H4_fontSize: 20px;    $m_H4_lineHeight: 28px;
+$m_H5_fontSize: 16px;    $m_H5_lineHeight: 24px;
+$m_H6_fontSize: 14px;    $m_H6_lineHeight: 20px;
